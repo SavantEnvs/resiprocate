@@ -1,0 +1,9 @@
+project: savantenvs/resiprocate
+target: aresfuzz
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/aresfuzz/testsuite
+cmds:
+  - cmd: /mayhem/aresfuzz
+    libfuzzer: true
+    timeout: 10

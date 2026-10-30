@@ -1,0 +1,8 @@
+# Bake the FULL repo (incl. .git) into the commit image; drop only local build output and cruft.
+# NB: upstream's tracked build/ directory (cmake modules) is needed, so it is NOT ignored here.
+mayhem/_build/
+mayhem/_build-tests/
+**/__pycache__/
+.DS_Store
+*.swp
+*~

@@ -1,0 +1,10 @@
+project: savantenvs/resiprocate
+target: fuzzStack
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzzStack/testsuite
+cmds:
+  - cmd: /mayhem/fuzzStack
+    libfuzzer: true
+    timeout: 10
+    dictionary: /mayhem/mayhem/fuzzStack/fuzzStack.dict
