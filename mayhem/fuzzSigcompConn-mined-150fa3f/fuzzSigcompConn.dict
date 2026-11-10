@@ -1,0 +1,8 @@
+# SigComp message header byte (RFC 3320 section 7): 0b11111xxx
+"\xf8"
+"\xf9"
+"\xfa"
+"\xfb"
+# TCP stream framing escape (RFC 3320 section 8 / RFC 5049): 0xFF 0xFF ends a message
+"\xff\xff"
+"\xff\x00"

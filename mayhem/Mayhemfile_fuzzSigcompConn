@@ -1,0 +1,10 @@
+project: savantenvs/resiprocate
+target: fuzzSigcompConn-mined-150fa3f
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzzSigcompConn-mined-150fa3f/testsuite
+cmds:
+  - cmd: /mayhem/fuzzSigcompConn
+    libfuzzer: true
+    timeout: 10
+    dictionary: /mayhem/mayhem/fuzzSigcompConn-mined-150fa3f/fuzzSigcompConn.dict
